@@ -18,7 +18,7 @@ const routes = [
     component: views.PhotographerView,
   },
   {
-    path: "/salon/:id",
+    path: "/salon",
     layout: DefaultLayout,
     exact: true,
     component: views.SalonView,
