@@ -1,27 +1,9 @@
-// import React, { Component } from 'react'
-
-// export class ListingPage extends Component {
-//     render() {
-//         return (
-//             <div>
-//                 ListingPage
-//             </div>
-//         )
-//     }
-// }
-
-// export default ListingPage
-
-
 import React, {Component} from 'react';
 import {FiRefreshCw} from "react-icons/fi";
-import GeneralHeader from "../../components/common/GeneralHeader";
 import Breadcrumb from "../../components/common/Breadcrumb";
 import PlaceListing from "../../components/places/PlaceListing";
 import ListingListSidebar from "../../components/sidebars/ListingListSidebar";
 import Button from "../../components/common/Button";
-import NewsLetter from "../../components/other/cta/NewsLetter";
-import Footer from "../../components/common/footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 import GenericHeader from "../../components/common/GenericHeader";
 
@@ -32,9 +14,6 @@ class ListingList extends Component {
     render() {
         return (
             <main className="listing-list">
-                {/* Header */}
-                <GeneralHeader />
-
                 {/* Breadcrumb */}
                 <Breadcrumb CurrentPgTitle="Listing List" MenuPgTitle="Listings" img={this.state.breadcrumbimg} />
 
@@ -67,13 +46,6 @@ class ListingList extends Component {
                         </div>
                     </div>
                 </section>
-
-                {/* Newsletter */}
-                <NewsLetter />
-
-                {/* Footer */}
-                <Footer />
-
                 <ScrollTopBtn />
             </main>
         );

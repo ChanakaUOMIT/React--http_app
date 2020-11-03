@@ -1,20 +1,4 @@
-// import React, { Component } from 'react'
-
-// export class Photographer extends Component {
-//     render() {
-//         return (
-//             <div>
-//                 Photographer
-//             </div>
-//         )
-//     }
-// }
-
-// export default Photographer
-
-
 import React, {Component} from 'react';
-import GeneralHeader from "../../../components/common/GeneralHeader";
 import ListingDetailsSidebar from "../../../components/sidebars/ListingDetailsSidebar";
 import ListingDetailsGallery from "../../../components/sliders/ListingDetailsGallery";
 import { BsCheckCircle } from 'react-icons/bs'
@@ -27,8 +11,6 @@ import CustomerFeedback from "../../../components/sidebars/widgets/CustomerFeedb
 import ListingDetailsComments from "../../../components/contact/ListingDetailsComments";
 import ReviewFields from "../../../components/contact/ReviewFields";
 import PlaceOne from "../../../components/places/PlaceOne";
-import NewsLetter from "../../../components/other/cta/NewsLetter";
-import Footer from "../../../components/common/footer/Footer";
 import ScrollTopBtn from "../../../components/common/ScrollTopBtn";
 import ListingDetailsBreadcrumb from '../../../components/businessProfile/listingDetailsBreadcrumb/ListingDetailsBreadcrumb';
 
@@ -82,8 +64,6 @@ class Photographer extends Component {
     render() {
         return (
             <main className="listing-details">
-                {/* Header */}
-                <GeneralHeader />
 
                 {/* Breadcrumb */}
                 <ListingDetailsBreadcrumb />
@@ -193,13 +173,6 @@ class Photographer extends Component {
                         <PlaceOne />
                     </div>
                 </section>
-
-                {/* Newsletter */}
-                <NewsLetter />
-
-                {/* Footer */}
-                <Footer />
-
                 <ScrollTopBtn />
             </main>
         );

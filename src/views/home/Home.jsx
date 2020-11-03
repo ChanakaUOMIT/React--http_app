@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import GeneralHeader from '../../components/common/GeneralHeader'
 import BannerOne from '../../components/banner/banner1/BannerOne'
 import SectionsHeading from "../../components/common/SectionsHeading";
 import PopularCategories from "../../components/other/categories/PopularCategories";
@@ -13,8 +12,6 @@ import SectionDivider from "../../components/common/SectionDivider";
 import LatestBlog from "../../components/blogs/LatestBlog";
 import CtaOne from "../../components/other/cta/CtaOne";
 import ClientLogo from "../../components/sliders/ClientLogo";
-import NewsLetter from "../../components/other/cta/NewsLetter";
-import Footer from "../../components/common/footer/Footer";
 import ScrollTopBtn from "../../components/common/ScrollTopBtn";
 
 
@@ -61,9 +58,6 @@ export default class Home extends Component {
     render() {
         return (
             <main className="home-1">
-                {/* Header */}
-                <GeneralHeader />
-
                 {/* Hero Banner */}
                 <BannerOne />
 
@@ -192,12 +186,7 @@ export default class Home extends Component {
                 {/* Client Logo */}
                 <ClientLogo />
 
-                {/* NewsLetter */}
-                <NewsLetter />
-
-                {/* Footer */}
-                <Footer />
-
+               
                 <ScrollTopBtn />
             </main>
         )
