@@ -12,7 +12,7 @@ import Views from "./views/views";
 const routes = [
   //----------- seller --------------
   {
-    path: "/photographer/:id",
+    path: "/photographer",
     layout: DefaultLayout,
     exact: true,
     component: views.PhotographerView,
