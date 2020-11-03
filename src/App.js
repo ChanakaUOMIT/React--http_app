@@ -92,6 +92,9 @@ import { Router, Route, Switch, Redirect } from 'react-router-dom';
 import routes from './routes';
 import Home3 from './pages/homes/Home3';
 import history from './_helpers/history'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './assets/css/style.css';
+import './App.css';
 // import { Provider } from 'react-redux';
 // import store from 'store';
 
@@ -100,8 +103,7 @@ function App() {
     // <Provider store={store}>
         <Router history={history}>
           <Switch>
-            <Route path="/" component={Home3} />
-            {/* {routes.map(
+            {routes.map(
               (route, index) => (
                 <Route
                   key={index}
@@ -110,7 +112,7 @@ function App() {
                   component={route.layout(route.component)} />
               )
             )}
-            <Redirect from="/home" to="/" /> */}
+            <Redirect from="/home" to="/" />
           </Switch>
         </Router>
     // </Provider>
