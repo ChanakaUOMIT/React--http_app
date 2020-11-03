@@ -100,7 +100,8 @@ function App() {
     // <Provider store={store}>
         <Router history={history}>
           <Switch>
-            {routes.map(
+            <Route path="/" component={Home3} />
+            {/* {routes.map(
               (route, index) => (
                 <Route
                   key={index}
@@ -109,7 +110,7 @@ function App() {
                   component={route.layout(route.component)} />
               )
             )}
-            <Redirect from="/home" to="/" />
+            <Redirect from="/home" to="/" /> */}
           </Switch>
         </Router>
     // </Provider>
